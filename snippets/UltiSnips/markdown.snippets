@@ -1,0 +1,19 @@
+snippet ++ "CriticMarkup addition" i
+\{++${1:${VISUAL:added}}++\}
+endsnippet
+
+snippet -- "CriticMarkup deletion" i
+\{--${VISUAL:deleted}--\}
+endsnippet
+
+snippet ~~ "CriticMarkup substitution" i
+\{~~${VISUAL:old}}~>${1:new}~~\}
+endsnippet
+
+snippet >> "CriticMarkup comment" i
+\{>>${1:${VISUAL:comment}}<<\}
+endsnippet
+
+snippet == "CriticMarkup highlight" i
+\{==${VISUAL:highlighted}==\}\{>>${1:comment}<<\}
+endsnippet
